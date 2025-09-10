@@ -2,8 +2,8 @@ import telebot
 import requests
 
 # 🔑 ВСТАВЬ СВОИ ТОКЕНЫ СЮДА!
-TELEGRAM_TOKEN = '8264467003:AAGXZOP9AVlRsXEETWJwoROz73S3O1clb6w'
-WEATHER_API_KEY = '1f3400eb9ab8e244392fabb1092001cc'
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+WEATHER_API_KEY = os.getenv('WEATHER_API_KEY')
 
 # 🤖 Создаем бота
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
